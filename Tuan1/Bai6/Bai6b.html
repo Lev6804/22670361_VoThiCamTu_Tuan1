@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai6b</title>
+    <style>
+        /* *{
+            box-sizing: border-box;
+            margin: 0 auto;
+        } */
+        #main{
+            width: 800px;
+            border: 1px solid black;
+        }
+        form{
+            margin: 5px;
+        }
+        #sm{
+            margin: 10px;
+        }
+        .th{
+            width: 15%;
+            text-align: left;
+        }
+        .th1{
+            width: 25%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 align="left">Contact Us</h1>
+        <form action="">
+            <fieldset >
+                <legend for="">Your message</legend>
+                <table>
+                    <tr>
+                        <th class="th">To</th>
+                        <td colspan="3">
+                            <input type="text" name="to" id="to" value="Example Cafe">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="th">Your email</th>
+                        <td colspan="3">
+                            <input type="text" name="youremail" id="youremail">
+                        </td>
+                </tr>
+                <tr>
+                    <th class="th">Message</th>
+                    <td colspan="3"><textarea name="message" id="message" cols="50" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <th class="th">Attach File</th>
+                    <td colspan="3">
+                        <input type="file" name="attach" id="attach" multiple>
+                    </td>
+                </tr>
+                </table>
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <legend>How you found us </legend>
+                <table>
+                    <tr>
+                        <th class="th1">How did you hear of us</th>
+                        <td colspan="3">
+                            <select name="howhear" id="howhear">
+                                <optgroup>
+                                    <option value="Google">Google</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="th1">Newsletter</th>
+                        <td colspan="3">
+                            <input type="checkbox" name="Newsletter" id="newsletter">Ensure this box is checked if you would like to receive email updates
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <input type="submit" name="sendmessage" value="Send message" id="sm">
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai6a</title>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    #tieude1{
+            border: 3px solid black;
+            width: 310px;
+            background-color: aqua;
+            border-radius: 10%;  
+            
+        }
+    #main{
+        width: 800px;
+        background-color: rgb(58, 167, 255);
+    }
+    .tieude{
+        text-align: center;
+    }
+    #su,#re{
+        background-color: aqua;
+        border-radius: 10%;
+        color: brown;
+        
+    }
+</style>
+</head>
+<body>
+    <div id="main">
+        <table>
+            <tr>
+                <div id="tieude1">
+                <center>
+                    <h2>&#10167;&nbsp;&nbsp;&nbsp;&nbsp;Jackson</h2>
+                    <hr size="5px" color="black">
+                    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Electronics</h2>
+                </center>
+                </div>
+            </tr>
+            <tr class="tieude">
+                <td colspan="4">
+                    <h1>Registration Form</h1>
+                </td>
+            </tr>
+            <tr class="tieude">
+                <td colspan="4">
+                    <p>Register your  Jackson Electronics product here</p>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">First name:</th>
+                <td colspan="3"><input type="text" name="firstname">Last name: <input type="text" name="lastname"></td>
+            </tr>
+            <tr>
+                <th align="left">Address#1:</th>
+                <td colspan="3">
+                    <form action="">
+                        <input type="text" name="Address#1" size="35">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Address#2:</th>
+                <td colspan="3">
+                    <form action="">
+                        <input type="text" name="Address#2" size="35">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">City: </th>
+                <td colspan="3"><input type="text" name="city">State:<input type="text" name="state" size="3">Zip:<input type="text" name="zip" size="5"></td>
+            </tr>
+            <tr>
+                <th align="left">Country:</th>
+                <td colspan="3">
+                    <input type="text" name="Country" value="United States">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <hr size="2px" color="black">
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Product:</th>
+                <td colspan="3">
+                    <select name="product">
+                        <optgroup>
+                            <option value="ScanMaster">Scan Master</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Date Purchased:</th>
+                <td colspan="3">
+                    <input type="text" name="date puerchased">
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Serial#</th>
+                <td colspan="3">
+                    <input type="text" name="serial#">
+                </td>
+            </tr>
+            <tr>
+                <th align="left">User for:</th>
+                <td colspan="3"><input type="radio" name="user for" value="Home">Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="user for" value="Educational Institusion">Educational Institusion</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td colspan="3"><input type="radio" name="user for" value="Business">Business &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="user for" value="Other">Other</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td colspan="3"><input type="radio" name="user for" value="Government">Government</td>
+            </tr>
+            <tr>
+                <th align="left">System (check all that apply):</th>
+                <td colspan="3"><input type="checkbox" name="system" value="windows">Windows &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<input type="checkbox" name="system" value="UNIX">UNIX</td>
+
+            </tr>
+            <tr>
+                <th></th>
+                <td colspan="3"> <input type="checkbox" name="system" value="Macintosh">Macintosh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="system" value="Other">Other</td>
+            </tr>
+            <tr>
+                <td colspan="4"> <hr size="2px" color="black"></td>
+            </tr>
+            <tr>
+                <th align="left" valign="top">Comments?:</th>
+                <td colspan="3">
+                    <form>
+                        <textarea rows=6 cols=50 name=comments>
+                        </textarea>
+                    </form>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="4">
+                    <input type="submit" name="submit" value="Click to Register" id="su">
+                    <input type="reset" name="reset" value="Click to cancel" id="re">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
